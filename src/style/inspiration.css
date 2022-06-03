@@ -1,0 +1,14 @@
+.inspiration-page.g-4 {
+  margin-top: 4vh;
+}
+
+.inspir .card-body{
+  display: flex;
+  justify-content: center;
+  background-color: #D0CFCB;
+  color: black;
+}
+
+.inspir .card{
+  border-style: none;
+}

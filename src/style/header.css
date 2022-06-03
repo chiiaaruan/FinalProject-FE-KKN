@@ -1,0 +1,18 @@
+#root {
+  background-color: #D0CFCB;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light a.navbar-brand {
+
+  margin-left: 2em;
+  margin-top: 2vh;
+  /* margin-top: 2vh; */
+}
+
+.navbar-nav {
+  margin-right: 2em;
+  font-family: 'Roboto Slab', serif;
+  font-weight:  400;
+  font-size: 20px;
+  margin-top: 1vh;
+}
