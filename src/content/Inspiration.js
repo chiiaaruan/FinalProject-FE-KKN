@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Foot from "../components/Footer";
 import Header from "../components/Header";
 import "./../style/inspiration.css";
+import axios from "axios";
 
 const Inspiration = () => {
+  const [roomList, setRoomList] = useState([]);
+
+  useEffect(() => {
+    allRoom();
+  }, []);
+
+  const allRoom = () => {
+    axios.get("/api/room").then((response) => {
+      console.log(response);
+      // setAccountList(response.data);
+    });
+  };
   return (
     <>
       <Header />
