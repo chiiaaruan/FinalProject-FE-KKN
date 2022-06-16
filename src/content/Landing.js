@@ -3,7 +3,7 @@ import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../style/landing.css";
 import Header from "../components/Header";
-import Foot from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
@@ -110,7 +110,7 @@ const Landing = () => {
         </Container>
       </div>
 
-      <Foot />
+      <Footer />
     </>
   );
 };
