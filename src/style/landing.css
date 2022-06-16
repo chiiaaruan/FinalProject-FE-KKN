@@ -41,11 +41,15 @@ img.d-block.w-100 {
   margin-bottom: 5vh;
 }
 
+.card {
+  border-style: none;
+}
+
 .card img {
-  height: 25vh;
+  height: 45vh;
 }
 
 .card-body {
-  background-color: #e9e6fd;
+  background-color: #ffffff;
   color: #332F2D;
 }

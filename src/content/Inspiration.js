@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Foot from "../components/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./../style/inspiration.css";
 import axios from "axios";
@@ -81,7 +81,7 @@ const Inspiration = () => {
         </div>
       </Container>
 
-      <Foot />
+      <Footer />
     </>
   );
 };

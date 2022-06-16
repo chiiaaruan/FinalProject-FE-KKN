@@ -51,8 +51,8 @@ const Landing = () => {
           <div className="choose">
             <h1>Rooms</h1>
             <div className="choose-card">
-              <Row>
-                <Col lg={4} style={{display:"flex", justifyContent:"flex-start"}}>
+              <Row xs={1} md={3}>
+                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src="./1.jpg" />
                     <Card.Body>
@@ -64,7 +64,7 @@ const Landing = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col lg={4} style={{display:"flex", justifyContent:"center"}}>
+                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src="./2.jpg" />
                     <Card.Body>
@@ -76,7 +76,7 @@ const Landing = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col lg={4} style={{display:"flex", justifyContent:"flex-end"}}>
+                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
                   <Card style={{ width: "18rem" }}>
                     <Card.Img variant="top" src="./3.jpg" />
                     <Card.Body>
