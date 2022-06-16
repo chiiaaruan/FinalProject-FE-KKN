@@ -1,5 +1,5 @@
 import React from "react";
-import Foot from "../components/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Container, Form } from "react-bootstrap";
 
@@ -56,7 +56,7 @@ const AddForm = () => {
           </Form>
         </div>
       </Container>
-      <Foot />
+      <Footer />
     </>
   );
 };

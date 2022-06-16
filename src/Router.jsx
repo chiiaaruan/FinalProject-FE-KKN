@@ -4,7 +4,8 @@ import About from "./content/About";
 import Inspiration from "./content/Inspiration";
 import Landing from "./content/Landing";
 import AddForm from "./content/Form";
-import Contact from "./content/Contact";
+import Login from "./content/Login";
+import Dashboard from "./content/Dashboard";
 
  
 export default function Router() {
@@ -14,8 +15,9 @@ export default function Router() {
         <Route path="/" element={< Landing/>} />
         <Route path="/inspirations" element={< Inspiration />} />
         <Route path="/about" element={< About />} />
-        <Route path="/contact" element={< Contact />} />
+        <Route path="/login" element={< Login />} />
         <Route path="/form" element={< AddForm />} />
+        <Route path="/dashboard" element={< Dashboard />} />
       </Routes>
     </div>
   );
