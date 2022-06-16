@@ -34,10 +34,10 @@ const Dashboard = () => {
         <Table striped bordered hover size="sm">
           <thead>
             <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th> </th>
+              <th>Room Type</th>
+              <th>Room Style</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
