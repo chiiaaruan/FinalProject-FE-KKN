@@ -1,6 +1,6 @@
 img.d-block.w-100 {
-  height: 700px;
-  margin-top: 1vh;
+  height: 500px;
+  margin-top: 20vh;
 }
 
 .carousel-control-prev-icon,
@@ -46,6 +46,6 @@ img.d-block.w-100 {
 }
 
 .card-body {
-  background-color: #332F2D;
-  color: #D0CFCB;
+  background-color: #e9e6fd;
+  color: #332F2D;
 }
