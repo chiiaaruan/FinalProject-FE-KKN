@@ -1,4 +1,12 @@
-.card {
-  margin-top: 20vh;
-  align-items: center;
+.login {
+  display: flex;
+  justify-content: center;
+  max-height: fit-content;
+  margin-top: 25vh;
+}
+
+.login h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }

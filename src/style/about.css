@@ -1,18 +1,16 @@
 .about {
   margin-top: 20vh;
 }
-
 .about h3 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
+  margin-top: 10px;
+  text-align: center;
 }
 .card img {
   height: 45vh;
 }
 
 .card-body {
-  text-align: center;
+  align-items: center;
   background-color: #ffffff;
   color: #332F2D;
 }

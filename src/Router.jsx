@@ -6,6 +6,8 @@ import Landing from "./content/Landing";
 import AddForm from "./content/Form";
 import Login from "./content/Login";
 import Dashboard from "./content/Dashboard";
+import Funiture from "./content/Funiture";
+import Style from "./content/Style";
 
  
 export default function Router() {
@@ -13,11 +15,13 @@ export default function Router() {
     <div>
       <Routes>
         <Route path="/" element={< Landing/>} />
-        <Route path="/inspirations" element={< Inspiration />} />
         <Route path="/about" element={< About />} />
-        <Route path="/login" element={< Login />} />
-        <Route path="/form" element={< AddForm />} />
         <Route path="/dashboard" element={< Dashboard />} />
+        <Route path="/form" element={< AddForm />} />
+        <Route path="/funiture" element={< Funiture />} />
+        <Route path="/inspirations" element={< Inspiration />} />
+        <Route path="/login" element={< Login />} />
+        <Route path ="/style" element={< Style />} />
       </Routes>
     </div>
   );

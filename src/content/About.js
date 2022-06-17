@@ -14,10 +14,10 @@ const About = () => {
           <h3>The Developers</h3>
           <div className='about-dev'>
             <Container>
-              <Row md={2}>
+              <Row md={2}  style={{marginTop: 25}}>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
                   <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                    <Card.Img variant="top" src="./about-delvin.jpg" />
                     <Card.Body>
                       <Card.Title>Delvin</Card.Title>
                     </Card.Body>
@@ -25,7 +25,7 @@ const About = () => {
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
                 <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                    <Card.Img variant="top" src="./about-chia.jpg" />
                     <Card.Body>
                       <Card.Title>Chia</Card.Title>
                     </Card.Body>
@@ -42,8 +42,8 @@ const About = () => {
             <Container>
               <Row xs={1} md={3}>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50}}>
+                    <Card.Img variant="top" src="./about-fiqri.jpg" />
                     <Card.Body>
                       <Card.Title>Fiqri Pratama</Card.Title>
                       <Card.Text>
@@ -53,8 +53,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-dwi.jpg" />
                     <Card.Body>
                       <Card.Title>Dwiyanto Saputra</Card.Title>
                       <Card.Text>
@@ -64,8 +64,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-helena.jpg" />
                     <Card.Body>
                       <Card.Title>Helena Natanael</Card.Title>
                       <Card.Text>
@@ -75,8 +75,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-stev.jpg" />
                     <Card.Body>
                       <Card.Title>Steven Kie</Card.Title>
                       <Card.Text>
@@ -86,8 +86,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-romi.jpg" />
                     <Card.Body>
                       <Card.Title>M. Romi Ario Utomo</Card.Title>
                       <Card.Text>
@@ -97,8 +97,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-ilham.jpg" />
                     <Card.Body>
                       <Card.Title>Ilham Kurnia Syuriadi</Card.Title>
                       <Card.Text>
@@ -108,8 +108,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-bagas.jpg" />
                     <Card.Body>
                       <Card.Title>Priambudi Lintang Bagaskara</Card.Title>
                       <Card.Text>
@@ -119,8 +119,8 @@ const About = () => {
                   </Card>
                 </Col>
                 <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
-                  <Card style={{ width: "20rem", height: "20rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                  <Card style={{ width: "20rem", height: "20rem", marginBottom: 50 }}>
+                    <Card.Img variant="top" src="./about-arkan.jpg" />
                     <Card.Body>
                       <Card.Title>Arkan Fauzan Ayyasyi</Card.Title>
                       <Card.Text>

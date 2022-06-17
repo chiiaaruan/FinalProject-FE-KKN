@@ -30,16 +30,13 @@ const Landing = () => {
               <div className="information">
                 <h1>Room Inspiration</h1>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                  There are many places and objects where you can find inspiration for
+                  interior design projects. Some are obvious while others might be unique
+                  to the theme of your design.
+                  The best way to find inspiration for interior design is to step outside
+                  your normal boundaries of creating and designing. Delve into a new
+                  expression through nature, art, or other medium and discover a renewal of
+                  excitement to create beautiful home designs.
                 </p>
               </div>
             </Col>
@@ -52,38 +49,44 @@ const Landing = () => {
             <h1>Rooms</h1>
             <div className="choose-card">
               <Row xs={1} md={3}>
-                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
+                <Col lg={4} style={{display:"flex", justifyContent:"flex-start"}}>
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src="./1.jpg" />
+                    <Card.Img variant="top" src="./monochrome.jpg" />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+                      <Card.Title>Monochrome</Card.Title>
                       <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        <b>Monochrome</b> rooms, or <i>spaces in black-and-white</i> or varying tones
+                        of one color, have long been used by designers to add drama and
+                        impact in homes. It's a daring approach to color that's daunting
+                        at first.
                       </Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
+                <Col lg={4} style={{display:"flex", justifyContent:"center"}}>
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src="./2.jpg" />
+                    <Card.Img variant="top" src="./urban.jpg" />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+                      <Card.Title>Urban</Card.Title>
                       <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        <b>Urban</b> interior design <i>blends elements of contemporary and modern</i>
+                        to having a softer, more comfortable look than industrial design
+                        styles, urban design embraces warehouse conversions and loft
+                        environments as its foundation.
                       </Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col lg={4} style={{display:"flex", justifyContent:"space-between"}}>
+                <Col lg={4} style={{display:"flex", justifyContent:"flex-end"}}>
                   <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src="./3.jpg" />
+                    <Card.Img variant="top" src="./multicolored.jpg" />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+                      <Card.Title>Multi-Colored</Card.Title>
                       <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        <b>Multi-colored</b>, or <i>adding colors make an ordinary room dazzle</i> in an instant.
+                        It can be a lot of fun to embrace different colors combined for your interiors
+                        Colors make a room alive. Even a small amount of it can make a big
+                        impact to your neutral walls.
                       </Card.Text>
                     </Card.Body>
                   </Card>

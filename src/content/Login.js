@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import {
   Container,
   Card,
@@ -18,9 +16,10 @@ const clicked = () => {
 const Login = () => {
   return (
       <>
-      <Header />
-        <Container>
+      <Container>
+        <div className='login'>
           <Card style={{ width: "20rem", height: "20rem" }}>
+            <h4>  Login Room Inspiration </h4>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -33,16 +32,13 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
               <Button variant="primary" type="button" onClick={clicked}>
-                Submit
+                Login
               </Button>
             </Form>  
           </Card>
-        </Container>
-      <Footer />
+        </div>
+      </Container>
       </>
   )
 }
