@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import {
@@ -12,8 +12,12 @@ import {
 import {  Button } from "reactstrap"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../style/dashboard.css";
+import axios from "axios";
+
 
 const Dashboard = () => {
+  const [roomList, setRoomList] = useState([]);
+  const [styleList, setStyleList] = useState([]);
   const [showEdit, setShowEdit] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -21,6 +25,37 @@ const Dashboard = () => {
   const handleShowEdit = () => setShowEdit(true);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleAdd = () => {
+    window.location.href = '/form';
+  };
+
+  useEffect(() => {
+    allRoom();
+    allStyle();
+  }, []);
+
+  const allRoom = () => {
+    axios
+      .get("/api/room")
+      .then((response) => {
+        setRoomList(response.data);
+      })
+      .catch((error) => {
+        alert("Error:", error);
+      });
+  };
+
+  const allStyle = () => {
+    axios
+      .get("/api/furniture")
+      .then((response) => {
+        setStyleList(response.data);
+      })
+      .catch((error) => {
+        alert("Error:", error);
+      });
+  };
 
   return (
     <>
@@ -37,7 +72,7 @@ const Dashboard = () => {
       <div className='bawah'>
         <Container>
           <div className='addroom'>
-            <Button color="primary" type="button">
+            <Button color="primary" type="button" onClick={handleAdd}>
               + Add Room
             </Button>
             <Button color="link" type="button">
@@ -47,7 +82,6 @@ const Dashboard = () => {
           <Table striped bordered hover size="sm">
             <thead>
               <tr>
-                <th> </th>
                 <th>Room Type</th>
                 <th>Room Style</th>
                 <th>Action</th>
@@ -55,7 +89,6 @@ const Dashboard = () => {
             </thead>
             <tbody>
               <tr>
-                <td>2</td>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>
@@ -76,21 +109,9 @@ const Dashboard = () => {
                                 <Form.Label>Type</Form.Label>
                                 <Form.Select aria-label="Default select example">
                                   <option>Choose Room Type</option>
-                                  <option value="1">Living Room</option>
-                                  <option value="2">Dining Room</option>
-                                  <option value="3">Bedroom</option>
-                                  <option value="4">Kitchen Room</option>
-                                  <option value="4">Playground</option>
-                                  <option value="4">Workspace</option>
-                                </Form.Select>
-                              </Form.Group>
-                              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>Style</Form.Label>
-                                <Form.Select aria-label="Default select example">
-                                  <option>Choose Room Style</option>
-                                  <option value="1">Monochrome</option>
-                                  <option value="2">Urban</option>
-                                  <option value="4">Colorful</option>
+                                  {roomList.map((item) => {
+                    return <option value={item.id}>{item.room_name}</option>;
+                  })}
                                 </Form.Select>
                               </Form.Group>
                             </Form>

@@ -45,8 +45,8 @@ img.d-block.w-100 {
   border-style: none;
 }
 
-.card img {
-  height: 45vh;
+.choose-card .card img {
+  height: 30vh;
 }
 
 .card-body {
