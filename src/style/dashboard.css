@@ -1,3 +1,13 @@
-.atas {
+.title {
     margin-top: 20vh;
+}
+
+.addroom {
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button{
+  margin-right: 10px;
 }
