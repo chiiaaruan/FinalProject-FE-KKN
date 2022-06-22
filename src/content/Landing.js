@@ -1,29 +1,69 @@
 import React from "react";
 import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./../style/landing.css";
 import Header from "../components/Header";
-import Foot from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
     <>
       <Header />
       <Container>
-        <Carousel fade>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./1.jpg" alt="First slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./2.jpg" alt="Second slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./3.jpg" alt="Third slide" />
-          </Carousel.Item>
-        </Carousel>
+        <div className="landing-carousel">
+          <Carousel fade>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="./1.jpg"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="./2.jpg"
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="./3.jpg"
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </Container>
 
-      <div className="content">
+      <Container>
+        <div className="content">
+          <Row>
+            <Col lg={4} className="desc">
+              <h2>Room Inspiration</h2>
+              <p>
+                There are many places and objects where you can find inspiration for
+                interior design projects. Some are obvious while others might be unique
+                to the theme of your design.<br/>
+                The best way to find inspiration for interior design is to step outside
+                your normal boundaries of creating and designing. Delve into a new
+                expression through nature, art, or other medium and discover a renewal of
+                excitement to create beautiful home designs.
+              </p>
+            </Col>
+            <Col lg={8} className="room">
+              <img src="./room.jpg" alt="room" />
+            </Col>
+          </Row>
+          <Row style={{display:"flex", justifyContent:"space-between", textAlign:"center"}}>
+            <Col>Card 1</Col>
+            <Col>Card 2</Col>
+            <Col>Card 3</Col>
+          </Row>
+        </div>
+      </Container>
+
+      {/* <div className="content">
         <Container>
           <Row>
             <Col lg={5} className="description">
@@ -95,9 +135,9 @@ const Landing = () => {
             </div>
           </div>
         </Container>
-      </div>
+      </div> */}
 
-      <Foot />
+      <Footer />
     </>
   );
 };
