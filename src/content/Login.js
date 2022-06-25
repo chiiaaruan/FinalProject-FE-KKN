@@ -10,7 +10,6 @@ import "./../style/login.css";
 
 const clicked = () => {
   window.location.href = '/dashboard'
-  // console.log("test")
 }
 
 const Login = () => {

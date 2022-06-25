@@ -11,41 +11,38 @@ const Style = () => {
     <Header />
       <Container>
         <div className="choose">
-          <h1>Funiture</h1>
+          <h1>Style</h1>
           <div className="choose-card">
             <Row xs={1} md={3}>
               <Col lg={4} style={{display:"flex", justifyContent:"flex-star"}}>
                 <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="./1.jpg" />
+                  <Card.Img variant="top" src="./monochrome.jpg" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Monochrome</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                        Spaces in black-and-white or varying tones of one color.
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
               <Col lg={4} style={{display:"flex", justifyContent:"center"}}>
                 <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="./2.jpg" />
+                  <Card.Img variant="top" src="./urban.jpg" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Urban</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Blends elements of contemporary and modern to having a softer and more comfortable look.
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
               <Col lg={4} style={{display:"flex", justifyContent:"flex-end"}}>
                 <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="./3.jpg" />
+                  <Card.Img variant="top" src="./multicolored.jpg" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    <Card.Title>Multi-colored</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Adding and combined different colors to make an ordinary room dazzle.
                     </Card.Text>
                   </Card.Body>
                 </Card>
