@@ -7,7 +7,7 @@ import axios from "axios";
 
 const Inspiration = () => {
   const [roomList, setRoomList] = useState([]);
-  const [setId] = useState([]);
+  // const [setId] = useState([]);
 
   useEffect(() => {
     allRoom();
@@ -23,7 +23,7 @@ const Inspiration = () => {
       <Header />
       <Container>
         <div className="inspir">
-        <Row xs={1} md={3} className="inspiration-page g-4 border-white">
+        {/* <Row xs={1} md={3} className="inspiration-page g-4 border-white">
           {roomList.map((item) => {
             return (
                 <Col>
@@ -42,9 +42,9 @@ const Inspiration = () => {
              
             );
           })}
-           </Row>
+           </Row> */}
 
-          {/* <Row xs={1} md={3} className="inspiration-page g-4 border-white">
+          <Row xs={1} md={3} className="inspiration-page g-4 border-white">
             <Col>
               <Card>
                 <Card.Img variant="top" src="./living-room.jpg" />
@@ -101,7 +101,7 @@ const Inspiration = () => {
                 </Card.Body>
               </Card>
             </Col>
-          </Row> */}
+          </Row>
         </div>
       </Container>
 
