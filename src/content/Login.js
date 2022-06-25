@@ -64,7 +64,7 @@ const Login = () => {
           <Card style={{ width: "20rem", height: "20rem" }}>
             <h4>  Login Room Inspiration </h4>
             <Form>
-              {errorMessage!=='' ? <p style={{color:"red", fontSize:"12px"}}> {errorMessage} </p> : '' }
+              {errorMessage!=='' ? <p style={{color:"red"}}> {errorMessage} </p> : '' }
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control value={email} onChange={(event)=>onChangeEmail(event)} type="email" placeholder="Enter email" />
