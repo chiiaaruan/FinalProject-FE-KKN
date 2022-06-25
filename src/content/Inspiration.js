@@ -7,7 +7,7 @@ import axios from "axios";
 
 const Inspiration = () => {
   const [roomList, setRoomList] = useState([]);
-  const [id, setId] = useState([]);
+  const [setId] = useState([]);
 
   useEffect(() => {
     allRoom();

@@ -8,14 +8,14 @@ import axios from "axios";
 
 const Funiture = () => {
   const [furnitureList, setFurnitureList] = useState([]);
-  const [id, setKid] = useState("");
+  const [setKid] = useState("");
 
   useEffect(() => {
     var baseUrl = window.location.href;
     var id = baseUrl.substring(baseUrl.lastIndexOf("/") + 1);
     setKid(id);
     allFurniture(id);
-  }, []);
+  }, );
 
   const allFurniture = (id) => {
     axios.get("/api/furniture/" + id).then((response) => {
