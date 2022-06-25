@@ -11,7 +11,7 @@ const AddForm = () => {
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [image, setImage] = useState("");
-  const [setTypeId] = useState("");
+  const [typeId, setTypeId] = useState("");
 
   const handleType = (e) => {
     setTypeId(e);
@@ -32,10 +32,10 @@ const AddForm = () => {
     setDescription(val);
   };
 
-  // const handleImage = (e) => {
-  //   const val = e.target.value;
-  //   setImage(val);
-  // };
+  const handleImage = (e) => {
+    const val = e.target.value;
+    setImage(val);
+  };
 
   const handleAdd = (e) => {
     e.preventDefault();

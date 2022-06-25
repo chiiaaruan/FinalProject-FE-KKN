@@ -17,7 +17,7 @@ import axios from "axios";
 
 const Dashboard = () => {
   const [roomList, setRoomList] = useState([]);
-  // const [styleList, setStyleList] = useState([]);
+  const [styleList, setStyleList] = useState([]);
   const [showEdit, setShowEdit] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -32,7 +32,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     allRoom();
-    // allStyle();
+    allStyle();
     allFuniture();
   }, []);
 
@@ -50,16 +50,16 @@ const Dashboard = () => {
       });
   };
 
-  // const allStyle = () => {
-  //   axios
-  //     .get("/api/furniture")
-  //     .then((response) => {
-  //       setStyleList(response.data);
-  //     })
-  //     .catch((error) => {
-  //       // alert("Error:", error);
-  //     });
-  // };
+  const allStyle = () => {
+    axios
+      .get("/api/furniture")
+      .then((response) => {
+        setStyleList(response.data);
+      })
+      .catch((error) => {
+        // alert("Error:", error);
+      });
+  };
 
   const allFuniture = () => {
     // pakai dummy karena belum tau respond body dari BE - nya apa
